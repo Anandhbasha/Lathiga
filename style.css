@@ -5,7 +5,7 @@ div{
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 600px; */
-    margin: 100px 100px 200px 300px;
+    /* margin: 100px 100px 200px 300px; */
 }
 #first{
     margin-left: 50px;
@@ -36,4 +36,48 @@ div{
     font-size: 50px;
     font-weight: 900;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
 }
+.box{
+    /* background-color: red; */
+    /* height: 400px;
+    width: 500px; */
+    /* box-shadow: 10px 2px 3px 5px black; */
+    /* background-image:  */
+   /* linear-gradient(#000000c4, #6969adbd, #02ff0257), url('./download.jpeg'); */
+   /* background-repeat: no-repeat; */
+    /* background-size: cov; */
+    /* float: left; */
+}
+
+/* positions */
+
+/* Static
+Fixed
+Sticky
+relative
+absolute */
+
+/* #first{ */
+    /* position: fixed; */
+    /* position: sticky;
+    top: 0;
+    left: 0;
+} */
+
+/* .box{
+    position: relative;
+    width: 2120px;
+    height: 100vh;
+    background-color: rgb(0, 255, 0);
+}
+.box1{
+    position: absolute;
+    top: 75vh;
+    left: 70vw;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+ */
