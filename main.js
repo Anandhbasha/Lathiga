@@ -156,37 +156,37 @@
             // }
 
 // switch
-let today="Wednesday"
-switch(today){
-    case "Monday":
-        console.log("Today is Monday");
-        break
-    case "Tuesday":
-        console.log("Today is Tuesday");
-        break
-    case "Wednesday":
-        console.log("Today is Wednesday");
-        break
-    case "Thursday":
-        console.log("Today is Thursday");
-        break
-    case "Friday":
-        console.log("Today is Friday");
-        break
-    case "Saturday":
-        console.log("Today is Saturday");
-        break
-    default:
-        console.log("Today is Sunday");
+// let today="Wednesday"
+// switch(today){
+//     case "Monday":
+//         console.log("Today is Monday");
+//         break
+//     case "Tuesday":
+//         console.log("Today is Tuesday");
+//         break
+//     case "Wednesday":
+//         console.log("Today is Wednesday");
+//         break
+//     case "Thursday":
+//         console.log("Today is Thursday");
+//         break
+//     case "Friday":
+//         console.log("Today is Friday");
+//         break
+//     case "Saturday":
+//         console.log("Today is Saturday");
+//         break
+//     default:
+//         console.log("Today is Sunday");
         
-}
+// }
 // loops
     //while
-    let num1 = 20
-    while(num1<25){
-        console.log("While is working");
-        num1++        
-    }
+    // let num1 = 20
+    // while(num1<25){
+    //     console.log("While is working");
+    //     num1++        
+    // }
 
     // let arr = [10,20,55,44,88]
     // console.log(arr[0]);
@@ -223,11 +223,205 @@ switch(today){
     //     temp = temp+names[x] //G
     //     console.log(temp);
         
+    // // }
+    //  let arr = [10,20,55,44,88]
+    // let total = 0
+    // for(let x=0;x<arr.length;x++){
+    //     total+=arr[x]        
     // }
-     let arr = [10,20,55,44,88]
-    let total = 0
-    for(let x=0;x<arr.length;x++){
-        total+=arr[x]        
-    }
-    console.log(total);
+    // console.log(total);
+
+
+// // for of
+// for (let x of arr){
+//     console.log(x);    
+// }
+// // for in
+// for (let x in arr){
+//     console.log(arr[x]);    
+// }
+// //foreach
+// arr.forEach((x)=>console.log(x))
+
+// map
+// arr.map((x)=>console.log(x))
+// // filter
+// even = arr.filter((x)=>x%2==0)
+// console.log(even);
+
+// // reduce
+// let total =0
+// total = arr.reduce((acc,sum)=>acc+sum) //0 ,sum = 10 0+10
+// console.log(total);
+
+// // indexOf
+// console.log(arr.indexOf(20));
+
+// // find
+// let value = arr.find((x)=>x==11)
+// console.log(value);
+
+// // push
+// arr.push(150)
+// console.log(arr);
+
+// // pop
+// arr.pop()
+// console.log(arr);
+
+// //shift
+// arr.shift()
+// console.log(arr);
+
+// //unshift
+// arr.unshift(250)
+// console.log(arr);
+
+// arr[4] = 225
+// console.log(arr);
+
+// // slice
+// console.log(arr.slice(0,3));
+
+// // split
+
+// let userName = "Hello world"
+
+// sp= userName.split(' ')
+// console.log(sp);
+
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 2, "Lemon", "Kiwi");
+// console.log(fruits);
+
+
+// console.log(fruits.sort());
+
+// let arr1 = [10,20,40,80,6,9,5]
+
+// console.log(arr1.sort());
+
+
+// // setTimeout
+// setTimeout(()=>{
+//     console.log("Settimeout is working");
     
+// },2000)
+// // setinterval
+// setInterval(()=>{
+//     console.log("setInterval is working");    
+// },2000)
+
+
+// types of function
+
+// arrow function
+// const arrow = (a,b)=>{
+//     console.log("Arrow is working")
+//     return a*b
+// }
+// console.log(arrow(20,10));
+
+// // IFFI
+// const IIFI = (function(){
+
+// })
+// IFFI()
+// // ananoums
+// const ananoums = function(){
+
+// }
+
+// ananoums()
+
+// async
+    // promise
+    // let newPromise = new Promise((resolved,reject)=>{
+    //     let coming = true
+    //     if(coming){
+    //         resolved("He is Here")
+    //     }
+    //     else{
+    //         reject("He is Not Here")
+    //     }
+    // })
+
+    // newPromise.then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+//     let student1 = new Promise((resolved,reject)=>{
+//         let reached1 = true
+//         if(reached1){
+//             resolved("Present1")
+//         }
+//         else{
+//             reject("Absent1")
+//         }
+//     })
+//     let student2 = new Promise((resolved,reject)=>{
+//         let reached2 = false
+//         if(reached2){
+//             resolved("Present2")
+//         }
+//         else{
+//             reject("Absent2")
+//         }
+//     })
+//     let student3 = new Promise((resolved,reject)=>{
+//         setTimeout(()=>{
+//             let reached3 = false
+//             if(reached3){
+//                 resolved("Present3")
+//             }
+//             else{
+//                 reject("Absent3")
+//             }
+//         },5000)
+//     })
+//     let student4 = new Promise((resolved,reject)=>{
+//         let reached4 = true
+//         if(reached4){
+//             resolved("Present4")
+//         }
+//         else{
+//             reject("Absent4")
+//         }
+//     })
+// Promise.allSettled([student1,student2,student3,student4]).then((res)=>{
+//     console.log(res)
+// }).catch((err)=>console.log(err))
+
+
+
+// let fetchData = new Promise((resolved,reject)=>{
+//     fetch('https://fakestoreapi.com/products').then((respose)=>{
+//         if(!respose.ok){
+//             reject("Unable to connect API")
+//         }
+//         else{
+//             resolved(respose.json())
+//         }
+//     })
+// })
+
+// fetchData.then((result)=>{console.log(result)}).catch((err)=>{console.log(err)})
+
+
+// async function
+
+const prodDetails = async()=>{
+    try {
+        let res = await fetch("https://fakestoreapi.com/products")
+        if(!res.ok){
+            throw Error("Unable to connect API")
+        }else{
+            let details = await res.json()
+            console.log(details);            
+        }
+    } catch (error) {
+        console.log(error);        
+    }
+}
+
+prodDetails()
