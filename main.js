@@ -408,20 +408,24 @@
 // fetchData.then((result)=>{console.log(result)}).catch((err)=>{console.log(err)})
 
 
-// async function
+// // async function
 
-const prodDetails = async()=>{
-    try {
-        let res = await fetch("https://fakestoreapi.com/products")
-        if(!res.ok){
-            throw Error("Unable to connect API")
-        }else{
-            let details = await res.json()
-            console.log(details);            
-        }
-    } catch (error) {
-        console.log(error);        
-    }
-}
+// const prodDetails = async()=>{
+//     try {
+//         let res = await fetch("https://fakestoreapi.com/products")
+//         if(!res.ok){
+//             throw Error("Unable to connect API")
+//         }else{
+//             let details = await res.json()
+//             console.log(details);            
+//         }
+//     } catch (error) {
+//         console.log(error);        
+//     }
+// }
 
-prodDetails()
+// prodDetails()
+
+
+
+// DOM
