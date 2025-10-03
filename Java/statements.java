@@ -3,8 +3,11 @@ public class statements {
         // if
         int a = 10;
         int b = 5;
-        if(a>b){
+        if(a<b){
             System.out.println("If is Working");
+        }
+        else{
+            System.out.println("Not working");
         }
     }
 }

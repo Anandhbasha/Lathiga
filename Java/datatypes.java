@@ -8,9 +8,12 @@ public class datatypes {
         // float d = 50.6f;
         // double h = 600000d;
         // char j = 'A';
+        // boolean isworki = true;
         // non premetive
-        String name = "Hello";
-        int [] arr = {10,20,30,40};
+        // string
+        // String name = "Hello";
+        // array
+        // int [] arr = {10,20,30,40};
         // class or Object
     }
 }
