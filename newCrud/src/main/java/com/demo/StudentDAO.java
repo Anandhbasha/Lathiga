@@ -11,7 +11,7 @@ public class StudentDAO {
 					"INSERT INTO newStudent(name,email,mobile,course) VALUES(?,?,?,?)" );
 			ps.setString(1, s.getName());
 			ps.setString(2, s.getEmail());
-			ps.setDouble(3, s.getMobile());
+			ps.setString(3, s.getMobile());
 			ps.setString(4, s.getCourse());
 			status = ps.executeUpdate();
 					
@@ -33,8 +33,9 @@ public class StudentDAO {
 				s.setId(rs.getInt(1));
 				s.setName(rs.getString(2));
 				s.setEmail(rs.getString(3));
-				s.setMobile(rs.getDouble(4));
+				s.setMobile(rs.getString(4));
 				s.setCourse(rs.getString(5));
+				list.add(s);
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -55,7 +56,7 @@ public class StudentDAO {
 				s.setId(rs.getInt(1));
 				s.setName(rs.getString(2));
 				s.setEmail(rs.getString(3));
-				s.setMobile(rs.getDouble(4));
+				s.setMobile(rs.getString(4));
 				s.setCourse(rs.getString(5));				
 			}
 			con.close();	
@@ -75,7 +76,7 @@ public class StudentDAO {
 			
 			ps.setString(1, s.getName());
 			ps.setString(2, s.getEmail());
-			ps.setDouble(3, s.getMobile());
+			ps.setString(3, s.getMobile());
 			ps.setString(4, s.getCourse());
 			status = ps.executeUpdate();
 		}catch(Exception e) {

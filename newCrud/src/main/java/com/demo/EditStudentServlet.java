@@ -10,7 +10,7 @@ public class EditStudentServlet extends HttpServlet{
 		int id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
-		double mobile = Integer.parseInt(request.getParameter("mobile"));
+		String mobile = request.getParameter("mobile");
 		String course = request.getParameter("course");
 		
 		StudentModel s = new StudentModel();

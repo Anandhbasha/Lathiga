@@ -9,12 +9,12 @@ public class exceptions {
         // catch(ArithmeticException e){
         //     System.out.println("cannot divide by zero");
         // }
-        // catch(IllegalArgumentException e){
-        //     System.out.println("Enter the integer value");
+        // // catch(IllegalArgumentException e){
+        // //     System.out.println("Enter the integer value");
         // }
         try{
             int [] a = {20,30,40};
-            System.out.println(a[3]);
+            System.out.println(a[2]);
         }
         catch(ArrayIndexOutOfBoundsException a){
             System.out.println("Index is Invalid");
