@@ -1,8 +1,8 @@
 class Cars{
     String CarName;
     int No_of_wheels = 4;
-    int Seats;
-    int airbags;
+    int Seats = 5;
+    int airbags = 6;
     int windows = 4;
     int milages;
 
@@ -15,19 +15,15 @@ class Cars{
 }
 public class oops {
     public static void main(String[] args) {
-        Cars c1 = new Cars();
-        Cars c2= new Cars();
-        c1.CarName="BMW";
-        c1.milages=20;
-        c1.Seats=5;
-        c1.airbags=6;
-        c1.brake();
-        c1.acc();
-        System.out.println(c1.milages);
-        c2.CarName="Maruthi";
-        c2.milages=18;
-        System.out.println(c2.milages);
-        c2.brake();
-        c2.acc();
+        Cars x1 = new Cars();
+        Cars x3 = new Cars();
+        x1.CarName="BMWX1";
+        x1.milages=20;
+        x3.CarName="BMWX3";
+        x3.milages=25;
+        x1.acc();
+        x3.acc();
+        System.out.println(x1.milages);
+        System.out.println(x3.milages);
     }
 }

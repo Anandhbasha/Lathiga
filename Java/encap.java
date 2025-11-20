@@ -10,7 +10,7 @@ class BankAccount{
         }
     }
     public void withdraw(double amount){
-        if(amount>0){
+        if(balance>amount){
             balance-=amount;
         }else{
             System.out.println("Invalid Amount to withdraw");
@@ -27,6 +27,7 @@ public class encap{
         System.out.println(user1.showBal());
         user1.deposit(2000);
         user1.withdraw(500);
+        System.out.println(user1.userID);
         System.out.println(user1.showBal());
     }
 }
